@@ -1,0 +1,5 @@
+{
+    "project_id": "data-tools-prod-336318",
+    "dataset": "logs",
+    "table": "airflow"
+}
