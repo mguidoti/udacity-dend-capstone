@@ -29,7 +29,7 @@ Once again, more details about the processes here included and somehow in-depth 
 
 For more, please, refer to [this link](https://sites.google.com/view/guidoti-udacity-dend-capstone/).
 
-## Data Sources
+### Data Sources
 There are two APIs, one external ([Notion.so](https://developers.notion.com/)) and another one belonging to the same organization ([TreatmentBank](https://tb.plazi.org/GgServer/dioStats)) - but sitting on an on-prem server in Germany. From this particular API, I consumed over 2 million rows.
 
 There was also a CSV import.
@@ -37,18 +37,18 @@ There was also a CSV import.
 Both [architectural reference plans can be found here](https://sites.google.com/view/guidoti-udacity-dend-capstone/data-architecture/reference-plans).
 
 
-## Why Google Cloud Platform and not AWS
+### Why Google Cloud Platform and not AWS
 [This is covered here](https://sites.google.com/view/guidoti-udacity-dend-capstone/qa), but in sum, that's because the company already partnered with Google, the free tier seems to fit our needs better and the services (especially BigQuery) too.
 
-## Data Lakehouse?
+### Data Lakehouse?
 Well, data lakehouses isn't actually new, and although I do understand the course taught about data warehouses and data lakes, the project's rubric doesn't require specifically to use one or the two of them - so I took the liberty to create something that fits our needs better. Why if fits us better? For several reasons, but mostly, because it fits us better. The idea is to have a single platform to hold unstructured and structure data, a database service that can also process tons of data at low cost (BigQuery) and a free tier big enough to allow this operation for us.
 
-## What about the data modeling?
+### What about the data modeling?
 Our data in this project is in BigQuery, a columnar database - meaning, it's not relational, which means there is no primary keys, or need to apply snowflake data modeling or to be concern about normalization and denormalization.
 
 The data suits our needs almost in a case-by-case situation and instead of having a data modelling per se, [I created data layers, which are explained here](https://sites.google.com/view/guidoti-udacity-dend-capstone/data-architecture/platform-organization).
 
-## Details on the Engineering
+### Details on the Engineering
 [It can all be found here](https://sites.google.com/view/guidoti-udacity-dend-capstone/data-engineering). DAGs are discussed and two particularly complex ones are explained, the processes supporting the POC of the platform, like the [load_params](https://sites.google.com/view/guidoti-udacity-dend-capstone/data-engineering/the-load_params-table?) or the [data quality](https://sites.google.com/view/guidoti-udacity-dend-capstone/data-engineering/data-quality) are discussed in detailed too.
 
 ## How to Run
