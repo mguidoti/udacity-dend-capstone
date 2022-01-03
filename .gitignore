@@ -1,0 +1,12 @@
+# Test or auxiliary files
+test*
+*_snippets
+
+# Files that I decided to not use anymore
+ABORTED-*
+DEPRECATED-*
+
+# Configuration files that I do not want to upload to the repo
+config/
+Pipfile*
+requirements*
